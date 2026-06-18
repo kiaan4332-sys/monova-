@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MONOVA Checkout</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">MONOVA</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="cart.html">Cart</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="section">
+
+<h2 class="section-title">
+CHECKOUT
+</h2>
+
+<div class="form-container">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+<input
+type="text"
+placeholder="Shipping Address"
+required>
+
+<button onclick="placeOrder()">
+
+PLACE ORDER
+
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 MONOVA Streetwear
+
+</footer>
+
+<script>
+
+function placeOrder(){
+
+alert(
+"Thank you for shopping with MONOVA! Your order has been placed."
+);
+
+localStorage.removeItem("cart");
+
+window.location.href =
+"index.html";
+
+}
+
+</script>
+
+</body>
+</html>
